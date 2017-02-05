@@ -1,0 +1,8 @@
+Chapter Goal Current
+"Chance" 10000 18
+"Necessity" 10000 33
+"Not by genes alone" 10000 8
+"The cradle" 10000 31
+"The ice" 10000 26
+"After the ice" 10000 17
+"Looking ahead" 10000 15

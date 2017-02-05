@@ -35,11 +35,15 @@ PANDOC_EPUB_OPTS := $(PANDOC_OPTS_ALL) \
 book.pdf: $(SOURCE_CHAPTERS) Makefile
 	$(PANDOC) $(PANDOC_PDF_OPTS) -o $@ $(SOURCE_CHAPTERS)
 
-book.epub: $(CHAPTERS) Makefile
+book.epub: $(SOURCE_CHAPTERS) Makefile
 	$(PANDOC) $(PANDOC_EPUB_OPTS) -o $@ $(SOURCE_CHAPTERS)
 
 book.mobi: book.epub
 	./kindlegen book.epub -o book.mobi
+
+progress: $(SOURCE_CHAPTERS) progress/compute-progress.py progress/plot-progress.R
+	python progress/compute-progress.py
+	Rscript progress/plot-progress.R
 
 all: book.pdf book.epub book.mobi
 
