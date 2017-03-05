@@ -1,5 +1,5 @@
 Chapter Goal Current
-"Chance" 10000 18
+"Chance" 10000 3233
 "Necessity" 10000 33
 "Not by genes alone" 10000 8
 "The cradle" 10000 31
