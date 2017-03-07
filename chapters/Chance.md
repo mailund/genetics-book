@@ -28,7 +28,7 @@ That might sound like a big number. You have 150 mutations. But keep in mind tha
 
 Anyway, you have a unique combination of chromosomes and on top of that a unique set of mutations. This is the randomness of evolution. Each new person is a completely new combination of genetics. Because of this random shuffling of chromosomes and the random mutations that is added on top of it, evolution never slows down. Each generation is different from the previous.
 
-## Models of evolving populations
+## Modelling an evolving populations
 
 It can be really hard to grown an intuition about how this whole thing works, but we do have maths to help us along, to guide our thoughts. We have mathematical models that describe how idealised populations evolve over time. These models are, of course, much simpler than the complex real biology that exists, but they capture various aspects of evolving populations and are tractable to analyse.
 
@@ -62,5 +62,7 @@ Mutations are rare. The chemistry that copies our DNA from one generation to the
 
 For humanity, this means that in the past when there were few humans around, we had few new mutations each generation, but these were lost or fixated relatively quickly; today, when there are billions of humans around, it takes a long time for variants to get lost or fixed, but we introduce more new mutations each generation as well.
 
+The speed at which variants are lost or fixed isn't quite as simple as that, though. It doesn't just depend on the effective population size but also the frequency at which we see them in the population. It is easier to loose rare variants and easier to fix common variants. In fact, the probability that any given variant becomes fixed in the entire population, assuming no new mutations, is the same as its fraction in the population, so a colour that is found in 10% of the marbles in the bucket has a 10% probability of becoming the only colour at some future generation. If it does not spread to the entire population it will eventually be lost from the population, so it also has a 90% of disappearing if its frequency is 10%. Since frequencies only change a little each generation---exactly how much is what is determined by the effective population size---it will take longer for medium-frequency variants to get to 0% or 100% frequency than variants that are already close to loss or fixation.
 
+Any new mutation that enters a population is potentially unique. It is, of course, possible for new mutations to have the same colour as a variant already in the population---how likely that is depends on how many possible variants a gene can have and how large the population is---but any specific new mutation is one of a kind. Since it has the lowest possible non-zero frequency any variant can have, it is as likely to get lost as any existing variant can possibly be. Since it is as rare as it is possible to be, it is also likely to be lost very fast.
 
